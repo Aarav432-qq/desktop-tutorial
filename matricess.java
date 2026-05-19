@@ -29,6 +29,12 @@ for(r=0;r<3;r++)
     {
 System.out.print(n[c][r]+"\t");}
 }
+for(r=2;r>=0;r--)
+{
+    System.out.println("\n");
+    for(c=0;c<3;c++)
+    {System.out.print(n[c][r]+"\t");}
+}
 }
 }
 
