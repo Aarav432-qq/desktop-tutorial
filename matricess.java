@@ -3,7 +3,7 @@ class matricess
 {public static void main(String arr[])
 {Scanner sc=new Scanner(System.in);
 int n[][] = new int[3][3];
-int r,c;
+int r,c,h=0;
 for(r=0;r<3;r++)
 {n[r]=new int[3];
 for(c=0;c<3;c++)
@@ -35,6 +35,17 @@ for(r=2;r>=0;r--)
     for(c=0;c<3;c++)
     {System.out.print(n[c][r]+"\t");}
 }
+for(r=0;r<3;r++)
+{
+    for(c=0;c<3;c++)
+    {
+        if (n[r][c]>h)
+            h=n[r][c];
+    }
+}
+System.out.println("highestt no is"+h);
+sc.close();
+
 }
 }
 
