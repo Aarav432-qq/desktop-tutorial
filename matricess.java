@@ -18,6 +18,10 @@ for(c=0;c<3;c++)
 {System.out.print(n[r][c]+"\t");
 }
 }
+for(r=0;r<3;r++)
+{for(c=0;c<3;c++)
+{if(r==c)
+System.out.println("diagonal no is"+n[r][c]);}}
 }
 }
 
