@@ -1,17 +1,19 @@
 import java.util.*;
 class employee{
     String name,department;
-    int pay;
+    int pay,b;
     void getdata(String n,String d,int p)
     {name=n;
     department=d;
     pay=p;
+    b=pay*5/100;
     
     }
     void showdata()
     {System.out.println("name is"+name);
     System.out.println("department is"+department);
     System.out.println("pay is"+pay);
+    System.out.println("bonus is"+b);
 
 
 }
