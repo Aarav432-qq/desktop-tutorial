@@ -4,14 +4,21 @@ class readfile4
 {public static void main(String arr[])
 {try
 {FileReader fr=new FileReader("prime.java");
-int ch;
+int ch,v=0;
 while((ch= fr.read())!=-1)
 {System.out.print((char)ch);
+if(ch=='a' ||ch=='e'||ch=='o'||ch=='i'||ch=='u')
+v++;
+
 }
+System.out.println("no of vowels are:"+v);
 fr.close();
 }
 catch(IOException e)
 {System.out.print("lnError :"+ e.getMessage());
 }
+
+
+
 }
 }
